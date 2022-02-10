@@ -1,118 +1,84 @@
 @font-face {
-    font-family: "DINNextLTPro";
-    src: url("../fonts/DINNextLTPro-normal.eot"); /* IE9 Compat Modes */
-    src: url("../fonts/DINNextLTPro-normal.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-      url("../fonts/DINNextLTPro-normal.otf") format("opentype"), /* Open Type Font */
-      url("../fonts/DINNextLTPro-normal.svg") format("svg"), /* Legacy iOS */
-      url("../fonts/DINNextLTPro-normal.ttf") format("truetype"), /* Safari, Android, iOS */
-      url("../fonts/DINNextLTPro-normal.woff") format("woff"), /* Modern Browsers */
-      url("../fonts/DINNextLTPro-normal.woff2") format("woff2"); /* Modern Browsers */
+    font-family: "Metropolis";
+    src: url("../fonts/Metropolis-Regular.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Metropolis-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/Metropolis-Regular.otf") format("opentype"), /* Open Type Font */
+      url("../fonts/Metropolis-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("../fonts/Metropolis-Regular.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/Metropolis-Regular.woff2") format("woff2"); /* Modern Browsers */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "DINNextLTPro";
-    src: url("../fonts/DINNextLTPro-normalItalic.eot"); /* IE9 Compat Modes */
-    src: url("../fonts/DINNextLTPro-normalItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-        url("../fonts/DINNextLTPro-normalItalic.otf") format("opentype"), /* Open Type Font */
-        url("../fonts/DINNextLTPro-normalItalic.svg") format("svg"), /* Legacy iOS */
-        url("../fonts/DINNextLTPro-normalItalic.ttf") format("truetype"), /* Safari, Android, iOS */
-        url("../fonts/DINNextLTPro-normalItalic.woff") format("woff"), /* Modern Browsers */
-        url("../fonts/DINNextLTPro-normalItalic.woff2") format("woff2"); /* Modern Browsers */
+    font-family: "Metropolis";
+    src: url("../fonts/Metropolis-RegularItalic.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Metropolis-RegularItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("../fonts/Metropolis-RegularItalic.otf") format("opentype"), /* Open Type Font */
+        url("../fonts/Metropolis-RegularItalic.ttf") format("truetype"), /* Safari, Android, iOS */
+        url("../fonts/Metropolis-RegularItalic.woff") format("woff"), /* Modern Browsers */
+        url("../fonts/Metropolis-RegularItalic.woff2") format("woff2"); /* Modern Browsers */
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "DINNextLTPro";
-    src: url("../fonts/DINNextLTPro-Italic.eot"); /* IE9 Compat Modes */
-    src: url("../fonts/DINNextLTPro-Italic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-      url("../fonts/DINNextLTPro-Italic.otf") format("opentype"), /* Open Type Font */
-      url("../fonts/DINNextLTPro-Italic.svg") format("svg"), /* Legacy iOS */
-      url("../fonts/DINNextLTPro-Italic.ttf") format("truetype"), /* Safari, Android, iOS */
-      url("../fonts/DINNextLTPro-Italic.woff") format("woff"), /* Modern Browsers */
-      url("../fonts/DINNextLTPro-Italic.woff2") format("woff2"); /* Modern Browsers */
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "DINNextLTPro";
-    src: url("../fonts/DINNextLTPro-Light.eot"); /* IE9 Compat Modes */
-    src: url("../fonts/DINNextLTPro-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-      url("../fonts/DINNextLTPro-Light.otf") format("opentype"), /* Open Type Font */
-      url("../fonts/DINNextLTPro-Light.svg") format("svg"), /* Legacy iOS */
-      url("../fonts/DINNextLTPro-Light.ttf") format("truetype"), /* Safari, Android, iOS */
-      url("../fonts/DINNextLTPro-Light.woff") format("woff"), /* Modern Browsers */
-      url("../fonts/DINNextLTPro-Light.woff2") format("woff2"); /* Modern Browsers */
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "DINNextLTPro";
-    src: url("../fonts/DINNextLTPro-LightItalic.eot"); /* IE9 Compat Modes */
-    src: url("../fonts/DINNextLTPro-LightItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-      url("../fonts/DINNextLTPro-LightItalic.otf") format("opentype"), /* Open Type Font */
-      url("../fonts/DINNextLTPro-LightItalic.svg") format("svg"), /* Legacy iOS */
-      url("../fonts/DINNextLTPro-LightItalic.ttf") format("truetype"), /* Safari, Android, iOS */
-      url("../fonts/DINNextLTPro-LightItalic.woff") format("woff"), /* Modern Browsers */
-      url("../fonts/DINNextLTPro-LightItalic.woff2") format("woff2"); /* Modern Browsers */
+    font-family: "Metropolis";
+    src: url("../fonts/Metropolis-ThinItalic.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Metropolis-ThinItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/Metropolis-ThinItalic.otf") format("opentype"), /* Open Type Font */
+      url("../fonts/Metropolis-ThinItalic.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("../fonts/Metropolis-ThinItalic.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/Metropolis-ThinItalic.woff2") format("woff2"); /* Modern Browsers */
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "DINNextLTPro";
-    src: url("../fonts/DINNextLTPro-Medium.eot"); /* IE9 Compat Modes */
-    src: url("../fonts/DINNextLTPro-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-      url("../fonts/DINNextLTPro-Medium.otf") format("opentype"), /* Open Type Font */
-      url("../fonts/DINNextLTPro-Medium.svg") format("svg"), /* Legacy iOS */
-      url("../fonts/DINNextLTPro-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
-      url("../fonts/DINNextLTPro-Medium.woff") format("woff"), /* Modern Browsers */
-      url("../fonts/DINNextLTPro-Medium.woff2") format("woff2"); /* Modern Browsers */
+    font-family: "Metropolis";
+    src: url("../fonts/Metropolis-Light.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Metropolis-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/Metropolis-Light.otf") format("opentype"), /* Open Type Font */
+      url("../fonts/Metropolis-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("../fonts/Metropolis-Light.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/Metropolis-Light.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../fonts/Metropolis-Medium.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Metropolis-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/Metropolis-Medium.otf") format("opentype"), /* Open Type Font */
+      url("../fonts/Metropolis-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("../fonts/Metropolis-Medium.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/Metropolis-Medium.woff2") format("woff2"); /* Modern Browsers */
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "DINNextLTPro";
-    src: url("../fonts/DINNextLTPro-MediumItalic.eot"); /* IE9 Compat Modes */
-    src: url("../fonts/DINNextLTPro-MediumItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-      url("../fonts/DINNextLTPro-MediumItalic.otf") format("opentype"), /* Open Type Font */
-      url("../fonts/DINNextLTPro-MediumItalic.svg") format("svg"), /* Legacy iOS */
-      url("../fonts/DINNextLTPro-MediumItalic.ttf") format("truetype"), /* Safari, Android, iOS */
-      url("../fonts/DINNextLTPro-MediumItalic.woff") format("woff"), /* Modern Browsers */
-      url("../fonts/DINNextLTPro-MediumItalic.woff2") format("woff2"); /* Modern Browsers */
+    font-family: "Metropolis";
+    src: url("../fonts/Metropolis-MediumItalic.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Metropolis-MediumItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/Metropolis-MediumItalic.otf") format("opentype"), /* Open Type Font */
+      url("../fonts/Metropolis-MediumItalic.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("../fonts/Metropolis-MediumItalic.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/Metropolis-MediumItalic.woff2") format("woff2"); /* Modern Browsers */
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "DINNextLTPro";
-    src: url("../fonts/DINNextLTPro-Regular.eot"); /* IE9 Compat Modes */
-    src: url("../fonts/DINNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-      url("../fonts/DINNextLTPro-Regular.otf") format("opentype"), /* Open Type Font */
-      url("../fonts/DINNextLTPro-Regular.svg") format("svg"), /* Legacy iOS */
-      url("../fonts/DINNextLTPro-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
-      url("../fonts/DINNextLTPro-Regular.woff") format("woff"), /* Modern Browsers */
-      url("../fonts/DINNextLTPro-Regular.woff2") format("woff2"); /* Modern Browsers */
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-  font-family: "QuartoLightItalic";
-  src: url("../fonts/Quarto-LightItalic.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/Quarto-LightItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/Quarto-LightItalic.otf") format("opentype"), /* Open Type Font */
-    url("../fonts/Quarto-LightItalic.svg") format("svg"), /* Legacy iOS */
-    url("../fonts/Quarto-LightItalic.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("../fonts/Quarto-LightItalic.woff") format("woff"), /* Modern Browsers */
-    url("../fonts/Quarto-LightItalic.woff2") format("woff2"); /* Modern Browsers */
-  font-weight: normal;
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/Metropolis-Bold.otf") format("opentype"), /* Open Type Font */
+  url("../fonts/Metropolis-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../fonts/Metropolis-Bold.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/Metropolis-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 600;
   font-style: normal;
 }
-
 
