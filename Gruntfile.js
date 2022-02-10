@@ -223,7 +223,7 @@ module.exports = function(grunt) {
 
     // default for development: type grunt
     grunt.registerTask('default', ['browserSync', 'watch']);
-    
+
     // rebuild the _dev folder: type grunt build
     grunt.registerTask('build', ['clean','processhtml:dev','imagemin','copy:unoptimizedImage','copy:js','sass:dist','postcss:dev','copy:the_pdf','copy:the_fonts','copy:favicons']);
 
