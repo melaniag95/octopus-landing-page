@@ -8,7 +8,7 @@ node_modules/
 dist/
 
 #_dev folder
-_dev
+_dev/
 
 # Compiled Java class files
 *.class
