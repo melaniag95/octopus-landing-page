@@ -69,11 +69,10 @@ module.exports = function(grunt) {
         },
 
         /*Grunt Tasks*/
-
-        // CLEAN: elimina la cartella _dev
+        //CLEAN: elimina la cartella _dev
         clean: ["<%= dev %>"],
 
-        //IMAGEMIN: comprime le immagini
+        //IMAGEMIN: comprime e ottimizza le immagini
         imagemin: {
             dynamic: {
                 files: [{
@@ -89,14 +88,16 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 options: {
+                    // require: 'plugins?'
                 },
                 files: {
                     '<%= dev %>/<%= css %>/octopus.css': '<%= source %>/<%= scss %>/octopus.scss'
                 }
-            },
+            }, //dist
 
             partials: {
                 options: {
+                    // require: 'plugins?'
                 },
                 files: {
                     '<%= dev %>/<%= css %>/octopus.css': '<%= source %>/<%= scss %>/octopus.scss'
@@ -120,7 +121,7 @@ module.exports = function(grunt) {
             }
         },
 
-        //BROWSERSYNC
+        //BBROWSERSYNC
         browserSync: {
             dev: {
                 bsFiles: {
@@ -137,7 +138,7 @@ module.exports = function(grunt) {
             }
         },
 
-        //PROCESS HTML: aggiunge gli html in _includes
+        // PROCESS HTML: elabora gli includes
         processhtml: {
             dev: {
                 files: [{
@@ -187,6 +188,7 @@ module.exports = function(grunt) {
                 },
             },
             favicons: {
+                // use http://realfavicongenerator.net/ to generate them
                 expand: true,
                 dot: true,
                 cwd: '<%= source %>/<%= images %>/<%= favicons %>',
@@ -219,10 +221,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
 
 
-    // default for development: 'grunt'
+    // default for development: type grunt
     grunt.registerTask('default', ['browserSync', 'watch']);
     
-    // rebuild the _dev folder: 'grunt build'
+    // rebuild the _dev folder: type grunt build
     grunt.registerTask('build', ['clean','processhtml:dev','imagemin','copy:unoptimizedImage','copy:js','sass:dist','postcss:dev','copy:the_pdf','copy:the_fonts','copy:favicons']);
 
 };
