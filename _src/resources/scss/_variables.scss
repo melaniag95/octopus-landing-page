@@ -46,6 +46,8 @@ $yellow:  #f9b200 ;
 $green:   #01642c ;
 $teal:    #20c997 ;
 $cyan:    #0dcaf0 ;
+$shadow:  #533d4a ;
+$light-green: #2b9f5e;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -372,7 +374,9 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) ;
 // You can add more entries to the $spacers map, should you need more variation.
 
 // scss-docs-start spacer-variables-maps
-$spacer: 1rem ;
+$spacer: 1rem;
+$spacer-m : 1.5rem;
+$spacer-xxl: 3.5rem;
 $spacers: (
         0: 0,
         1: $spacer * .25,
@@ -597,6 +601,7 @@ $font-weight-base:            $font-weight-normal ;
 
 $line-height-base:            1.5 ;
 $line-height-sm:              1.25 ;
+$line-height-m:               1.8 ;
 $line-height-lg:              2 ;
 
 $h1-font-size:                $font-size-base * 2.5 ;
@@ -605,6 +610,9 @@ $h3-font-size:                $font-size-base * 1.75 ;
 $h4-font-size:                $font-size-base * 1.5 ;
 $h5-font-size:                $font-size-base * 1.25 ;
 $h6-font-size:                $font-size-base ;
+
+$hero-heading:                4.5rem;
+$hero-subtitle:               $h2-font-size;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -1124,6 +1132,12 @@ $navbar-toggler-font-size:          $font-size-lg ;
 $navbar-toggler-border-radius:      $btn-border-radius ;
 $navbar-toggler-focus-width:        $btn-focus-width ;
 $navbar-toggler-transition:         box-shadow .15s ease-in-out ;
+
+$navbar-light-color:                $white;
+
+$navbar-dark-toggler-icon-bg-collapsed: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='#{$navbar-light-color}' fill-rule='nonzero' d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/></svg>");
+
+
 // scss-docs-end navbar-variables
 
 // scss-docs-start navbar-theme-variables
@@ -1145,6 +1159,8 @@ $navbar-light-brand-color:                $navbar-light-active-color ;
 $navbar-light-brand-hover-color:          $navbar-light-active-color ;
 $navbar-dark-brand-color:                 $navbar-dark-active-color ;
 $navbar-dark-brand-hover-color:           $navbar-dark-active-color ;
+$navbar-desktop-height:                   4rem;
+$navbar-mobile-height:                    3.5rem;
 // scss-docs-end navbar-theme-variables
 
 
