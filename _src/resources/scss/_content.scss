@@ -1,4 +1,218 @@
-.container {
-  @include make-container();
-  @include make-col(12);
+:root {
+  --app-height: 100%;
+}
+
+.main-content {
+  margin-top: -$navbar-mobile-height;
+  @include media-breakpoint-up(md) {
+    //padding-top: $navbar-desktop-height;
+    margin-top: -$navbar-desktop-height;
+  }
+  .section {
+    &-hero {
+      display: flex;
+      align-items: center;
+      background-image: url("../images/page-hero.jpg");
+      height: var(--app-height);
+      .container {
+        position: static;
+        z-index: 9999;
+        .wrapper {
+          .component-row {
+            .component-col-content {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin: 0 auto;
+              padding: 0 $spacer-m;
+              text-align: center;
+              &::after,
+              &::before {
+                @include media-breakpoint-up(md) {
+                  content: '';
+                  display: block;
+                  background: $white;
+                  width: 70%;
+                  height: 0.35rem;
+                  margin: $spacer;
+                  animation: marginVisible 4s;
+                }
+              }
+              .hero {
+                &-title {
+                  width: fit-content;
+                  margin-bottom: 0;
+                  font-weight: 600;
+                  font-size: $font-size-xl;
+                  color: $white;
+                  text-shadow:rgba(0, 0, 0, 0.79) 1px 1px, rgba(0, 0, 0, 0.79) 2px 2px, rgba(0, 0, 0, 0.79) 3px 3px, rgba(0, 0, 0, 0.79) 4px 4px;
+                  @include media-breakpoint-up(xl) {
+                    font-size: $hero-heading;
+                  }
+                }
+                &-subtitle {
+                  width: fit-content;
+                  font-size: $font-size-lg;
+                  color: $white;
+                  text-shadow:rgba(0, 0, 0, 0.79) 1px 1px, rgba(0, 0, 0, 0.79) 2px 2px, rgba(0, 0, 0, 0.79) 3px 3px, rgba(0, 0, 0, 0.79) 4px 4px;
+                  @include media-breakpoint-up(md){
+                    font-size: 3vw;
+                  }
+                  @include media-breakpoint-up(xxl) {
+                    font-size: $hero-subtitle;
+                  }
+                }
+                &-title,
+                &-subtitle {
+                  @include media-breakpoint-up(md){
+                    text-shadow: none;
+                    line-height: 0;
+                    animation: curtrain 4s forwards;
+                    overflow: hidden;
+                    background: $white;
+                    background-size: 300% 100%;
+                    -webkit-background-clip: text;
+                  }
+                }
+              }
+              @include media-breakpoint-up(md){
+                padding: $spacer-m*2;
+              }
+            }
+          }
+          .scroll-down {
+            position: absolute;
+            bottom: $spacer*2;
+            left: 50%;
+            display: block;
+            width: $scroll-down-btn-width;
+            height: $scroll-down-btn-width;
+            border: 2px solid $white;
+            border-radius: 50%;
+            z-index: 2;
+            -webkit-animation: bounce 2s infinite 2s;
+            animation: bounce 2s infinite 2s;
+            -webkit-transition: all .2s ease-in;
+            transition: all .2s ease-in;
+            transform: scale(1);
+            &::before {
+              position: absolute;
+              top: calc(50% - 8px);
+              left: calc(50% - 6px);
+              transform: rotate(-45deg);
+              display: block;
+              width: 12px;
+              height: 12px;
+              content: "";
+              border: 2px solid white;
+              border-width: 0px 0 2px 2px;
+            }
+          }
+        }
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.6;
+        background-color: $hero-mask;
+      }
+      @include media-breakpoint-up(md) {
+        height: 100vh;
+      }
+    }
+    &-content {
+      .container {
+        .wrapper {
+          .component-row {
+            padding: $spacer-xxl 0;
+            text-align: center;
+            .component-col-content {
+              .component {
+                &-title {
+                  margin-bottom: $spacer-m * 2;
+                  font-size: $font-size-base * 3;
+                  font-weight: bold;
+                  transition: all 0.9s;
+                }
+                &-body {
+                  font-size: $font-size-base;
+                  line-height: $line-height-m;
+                  transition: all 1.3s;
+                  @include media-breakpoint-up(md) {
+                    font-size: $font-size-lg;
+                  }
+
+                  .text-divider {
+                    display: flex;
+                    align-items: center;
+                    --text-divider-gap: 1rem; // set a customizable gap between label and lines
+                    margin: $spacer*2 0;
+                  }
+
+                  .text-divider::before,
+                  .text-divider::after {
+                    content: '';
+                    height: 1px;
+                    background-color: silver;
+                    flex-grow: 1;
+                  }
+
+                  .text-divider::before {
+                    margin-right: var(--text-divider-gap);
+                  }
+
+                  .text-divider::after {
+                    margin-left: var(--text-divider-gap);
+                  }
+                }
+              }
+              .anim-left {
+                transform: translate(-25rem,0);
+              }
+            }
+          }
+          &.scrollAnim {
+            opacity: 0;
+            transition: 0.9s;
+            &.anim {
+              opacity: 1;
+            }
+            &.anim .anim-left{
+              transform: translate(0,0);
+            }
+          }
+        }
+      }
+    }
+    &-box {
+      display: flex;
+      align-items: center;
+      background-image: url("../images/kingtubbymachine.jpg");
+      height: 100vh;
+      .container {
+        height: 100%;
+        .wrapper {
+          height: 100%;
+          .component-row {
+            height: 100%;
+            .component-col-content {
+              margin: 0 auto;
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .parallax-effect {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

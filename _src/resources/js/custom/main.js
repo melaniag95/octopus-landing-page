@@ -18,19 +18,18 @@ window.addEventListener('scroll', () => {
     });
 });
 
-$('button.navbar-toggler').on('click', function (){
-  if($('button.navbar-toggler').attr('aria-expanded')== 'true') {
-      $('#HeaderNavbar .container').addClass('bg-dark');
-      $('#HeaderNavbar').addClass('bg-dark');
-  } else {
-      $('#HeaderNavbar').removeClass('bg-dark');
-      $('#HeaderNavbar .container').removeClass('bg-dark');
-  };
+//Calculate screen height
+const appHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+}
+window.addEventListener('resize', appHeight)
+appHeight()
 
-    const navLinks = document.querySelectorAll('.nav-item')
-    const menuToggle = document.getElementById('CollapseNavbar')
-    const bsCollapse = new bootstrap.Collapse(menuToggle)
-    navLinks.forEach((l) => {
-        l.addEventListener('click', () => { bsCollapse.toggle() })
-    })
-})
+//Scroll down button
+$(function() {
+    $('.scroll-down').click (function() {
+        $('html, body').animate({scrollTop: $('section#about-us').offset().top });
+        return false;
+    });
+});

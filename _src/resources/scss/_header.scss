@@ -1,8 +1,109 @@
 .section-header {
-  margin: 0;
   padding: 0;
+  height: $navbar-mobile-height;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 9999;
   .header {
-    @include make-container();
     @include make-col(12);
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    .navbar-container{
+      width: 100%;
+      height: 100%;
+      #HeaderNavbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: $dark;
+        .navbar {
+          &-site-logo {
+            flex: 0 0 10%;
+          }
+          &-collapse {
+            transition: var(--transition);
+            @include media-breakpoint-up(md) {
+              display: block!important;
+              flex: 0 0 60%;
+            }
+            &:not(.show) {
+              display: none;
+            }
+          }
+          &-toggler {
+            padding: 0;
+            color: transparent;
+            background-image: escape-svg($navbar-dark-toggler-icon-bg-collapsed);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+          }
+        }
+        .navbar-site-logo {
+          .site-logo {
+            display: block;
+            width: fit-content;
+            padding: $spacer/2 0 0.4rem 0;
+            @include media-breakpoint-up(md) {
+              padding: $spacer/2 0;
+            }
+          }
+        }
+        .navbar-collapse {
+          .navbar-content {
+            display: block;
+            &-menu {
+              margin-bottom: 0;
+              .nav-item {
+                display: inline-block;
+                margin-right: $spacer;
+                margin-top: $spacer;
+                &-link {
+                  padding: $spacer $spacer $spacer 0;
+                  font-size: $font-size-base;
+                  font-weight: 600;
+                  text-transform: uppercase;
+                  text-decoration: none;
+                  color: $white;
+                  transition: 0.5s;
+                  &:hover {
+                    background-color: rgba(0, 0, 0, 0.6);
+                    color: $white;
+                  }
+                  @include media-breakpoint-up(md) {
+                    padding: $spacer;
+                  }
+                }
+                &:last-child {
+                  margin-right: 0;
+                  margin-bottom: $spacer;
+                  @include media-breakpoint-up(md){
+                    margin-bottom: 0;
+                  }
+                }
+                @include media-breakpoint-up(md) {
+                  margin-top: 0;
+                }
+              }
+            }
+            @include media-breakpoint-up(md) {
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+          &.bg-dark {
+            background-color: black;
+          }
+        }
+        @include media-breakpoint-up(md) {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(md) {
+    height: $navbar-desktop-height;
   }
 }
